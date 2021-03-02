@@ -1,15 +1,18 @@
-@import url('navbar.css')
-
 .main-container {
   width: 95vw;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
 }
-/* navbar */
 h1 {
   font-size: 22px;
   font-weight: bold;
 }
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+/* navbar */
 .navbar {
   display: flex;
   margin-bottom: 2%;
@@ -117,4 +120,50 @@ input[value="Marseille, France"] {
 .filter__text p {
   margin: 0;
   font-size: 12px;
+}
+/* results */
+.results {
+  background-color: #F2F2F2;
+  width: 60%;
+  height: 40%;
+  border-radius: 10px;
+}
+.cards {
+  display: grid;
+  margin-left: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+}
+.card {
+  width: 90%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+.card__image {
+  width: 95%;
+  height: auto;
+  margin: 5px auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card__text {
+  margin: 5px;
+}
+.card__text h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.card__text p {
+  font-size: 12px;
+}
+.rate {
+  display: flex;
+}
+.stars {
+  color: #0065FC;
+}
+.stars-grey {
+  color: #F2F2F2;
 }
