@@ -172,6 +172,7 @@ input[value="Marseille, France"] {
   height: 150px;
   display: block; /* pr pouvoir centrer l'img avec margin auto */
   margin: 8px auto;
+  padding-top: 8px;
   object-fit: cover;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -253,11 +254,12 @@ input[value="Marseille, France"] {
 }
 .popular-card__text p {
   font-size: 1.1rem;
+  padding-bottom: 0.5rem;
 }
 .popular-rate {
   display: flex;
   font-size: 1rem;
-  padding-top: 2rem;
+
 }
 /* article activities */
 .activities {
