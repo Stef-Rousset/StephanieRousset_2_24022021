@@ -4,14 +4,31 @@
   font-family: 'Raleway', sans-serif;
   font-size: 65%; /* environ 10px */
 }
+h1, h2, h3 {
+  font-weight: bold;
+}
 h1 {
   font-size: 1.7rem;
-  font-weight: bold;
 }
 h2 {
   font-size: 1.5rem;
-  font-weight: bold;
-  padding: 20px;
+  padding-top: 3rem;
+  padding-left: 1.6rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+a , a:hover {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+img {
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 /* navbar */
 .navbar {
@@ -25,7 +42,7 @@ h2 {
   width: 90%;
 }
 #logo {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 .navbar__links__nav {
   display: flex;
@@ -33,28 +50,27 @@ h2 {
   width: 20%;
 }
 .navbar__links__nav a {
-  color: black;
-  text-decoration: none;
-  padding-top: 10px;
+  padding-top: 1rem;
   font-size: 1.2rem;
 }
 .navbar__links__nav a:hover {
   color: #0065FC;
   text-decoration: none;
   border-top: 2px solid #0065FC;
-  }
+  opacity: 1;
+}
 .navbar__signin {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 .navbar__signin a {
   color: #0065FC;
-  text-decoration: none;
   font-size: 1.2rem;
+  padding-top: 1rem;
 }
 .navbar__signin a:hover {
+  border-top: 2px solid black;
   color: black;
-  font-weight: bold;
-  text-decoration: none;
+  opacity: 1;
 }
 /* header */
 header p {
@@ -81,17 +97,10 @@ input[value="Marseille, France"] {
   display: flex;
   align-items: center;
 }
-.filter__buttons a {
-  text-decoration: none;
-  color: black;
-}
 .filter__buttons a:hover {
   opacity: 0.7;
 }
-
-.filter__buttons h2 {
-  font-size: 1.1rem;
-  font-weight: bold;
+.filter__buttons h3 {
   margin-right: 15px;
 }
 .filter__buttons__btn {
@@ -114,7 +123,7 @@ input[value="Marseille, France"] {
   padding-right: 5px;
   margin: 0;
   padding: 0 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .filter__text {
   display: flex;
@@ -144,27 +153,23 @@ input[value="Marseille, France"] {
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
-  width: 60%;
-  height: 80vh;
-  border-radius: 10px;
-}
-.results a {
-  text-decoration: none;
-  color: black;
+  width: 62%;
+  height: 85vh;
+  border-radius: 1rem;
 }
 .hotel-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 30%;
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-template-rows: 1fr 1fr;
-  margin: 0 20px;
+  margin: 1.6rem;
 }
 .hotel-card {
   width: 100%;
   height: auto;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .hotel-card__image {
@@ -172,17 +177,9 @@ input[value="Marseille, France"] {
   height: 150px;
   display: block; /* pr pouvoir centrer l'img avec margin auto */
   margin: 8px auto;
-  padding-top: 8px;
-  object-fit: cover;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 .hotel-card__text {
   margin: 8px;
-}
-.hotel-card__text h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
 }
 .hotel-card__text p {
   font-size: 1.1rem;
@@ -197,19 +194,15 @@ input[value="Marseille, France"] {
 .stars-grey {
   color: #F2F2F2;
 }
-.results-afficher {
+/*.results-afficher {
   margin-top: auto;
-}
+}*/
 /* aside popular */
 .popular {
   background-color: #F2F2F2;
   width: 35%;
-  height: 80vh;
-  border-radius: 10px;
-}
-.popular a {
-  text-decoration: none;
-  color: black;
+  height: 85vh;
+  border-radius: 1rem;
 }
 .popular-cards {
   width: 80%;
@@ -225,32 +218,29 @@ input[value="Marseille, France"] {
 }
 .fa-chart-line {
   font-size: 1.5rem;
+  padding-top: 40px;
 }
 .popular-card {
   display:flex ;
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  margin: 20px 0px;
+  margin: 1.6rem 0rem;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .popular-card__image {
   width: 35%;
   height: 150px;
-  margin: 8px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  margin: 0.6rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 0rem;
 }
 .popular-card__text {
-  margin: 8px;
-  padding-top: 12px;
-}
-.popular-card__text h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
+  margin: 0.8rem;
+  padding-top: 1.1rem;
 }
 .popular-card__text p {
   font-size: 1.1rem;
@@ -259,31 +249,37 @@ input[value="Marseille, France"] {
 .popular-rate {
   display: flex;
   font-size: 1rem;
-
 }
 /* article activities */
 .activities {
   width: 100%;
-  margin: 20px auto;
+  margin: 2rem auto;
   height: 50vh;
 }
 .activities h2 {
   padding-left: 0px;
+  padding-top: 0px;
+  margin-top: 6rem;
 }
 .activity-cards {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 100%;
+  height: 85%;
   width: 100%;
+  margin: 2rem auto;
 }
 .activity-cards__column {
-  width: 24%;
+  width: 23%;
   height: 100%;
 }
 .activity-cards__column a {
-  text-decoration: none;
-  color: black;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+  border-radius: 1rem;
+}
+.one-card {
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+  border-radius: 1rem;
 }
 .two-cards {
   display: flex;
@@ -292,25 +288,16 @@ input[value="Marseille, France"] {
 }
 .activity-card-big {
   height: 100%;
-  border-radius: 10px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .activity-card-medium {
   height: 50%;
-  border-radius: 10px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .activity-card-little {
   height: 40%;
-  border-radius: 10px;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .activity-card__image {
   width: 100%;
   height: 80%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  object-fit: cover;
 }
 .big-img {
   height: 90%;
@@ -321,8 +308,24 @@ input[value="Marseille, France"] {
 .activity-card__title {
   font-size: 1.1rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
-
-
-
+/* footer */
+footer {
+  background-color: #F2F2F2;
+  margin-top: 4rem;
+}
+.footer__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.footer__column h3 {
+  margin-bottom: 2rem;
+}
+.footer__column p {
+  margin-bottom: 0;
+}
