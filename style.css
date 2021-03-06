@@ -281,6 +281,10 @@ input[value="Marseille, France"] {
   width: 24%;
   height: 100%;
 }
+.activity-cards__column a {
+  text-decoration: none;
+  color: black;
+}
 .two-cards {
   display: flex;
   flex-direction: column;
