@@ -150,8 +150,6 @@ input[value="Marseille, France"] {
 }
 /* section results */
 .results {
-  display: flex;
-  flex-direction: column;
   background-color: #F2F2F2;
   width: 62%;
   height: 85vh;
@@ -194,9 +192,11 @@ input[value="Marseille, France"] {
 .stars-grey {
   color: #F2F2F2;
 }
-/*.results-afficher {
-  margin-top: auto;
-}*/
+.results-afficher {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
 /* aside popular */
 .popular {
   background-color: #F2F2F2;
@@ -323,9 +323,8 @@ footer {
   margin: 0 auto;
   padding: 2rem 0;
 }
-.footer__column {
-  display: flex;
-  flex-direction: column;
+.footer__column a {
+  display: block;
 }
 .footer__column h3 {
   margin-bottom: 2rem;
