@@ -407,15 +407,14 @@ footer {
   }
   .navbar {
     align-items: start;
-    margin-top: 2rem;
+    margin: 2rem 1rem 0 1rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #F2F2F2;
+/*    border-bottom: 2px solid #F2F2F2;*/
   }
   .navbar a {
     font-size: 1rem;
   }
   .navbar__links,  .navbar__signin {
-    margin: 0 0.5rem;
     width: 50%;
    }
   .navbar__links {
@@ -432,15 +431,19 @@ footer {
     padding-top: 0px;
   }
   .black-link:hover {
-    padding-bottom: 1rem;
     border-bottom: 2px solid #0065FC;
     border-top: 0;
   }
   .places {
-    padding: 1rem 1rem 0rem 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 2px solid #F2F2F2;
   }
   .todo {
-    padding: 1.5rem 1rem 0rem 1rem;
+    text-align: end;
+    width: 100%;
+    padding: 1.6rem 1rem 1rem 1rem;
+    border-bottom: 2px solid #F2F2F2;
   }
   header {
     margin: 0 1rem;
@@ -579,6 +582,14 @@ footer {
   }
   .footer__columns {
     grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+  .footer__column {
+    margin-bottom: 1rem;
+  }
+  .footer__columns h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
   }
 }
 
