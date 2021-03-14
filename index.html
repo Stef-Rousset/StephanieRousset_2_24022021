@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-          crossorigin="anonymous">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- googlefonts -->
@@ -18,33 +14,34 @@
   <body>
     <div class="main-container">
       <!-- navbar -->
-        <nav class="navbar col-xs-12 col-sm-12">
+        <nav class="navbar">
           <div class="navbar__links">
             <img src="images/Reservia.svg" alt="logo" id="logo">
-            <div class="navbar__links__nav">
-              <a href="#places">Hébergements</a>
-              <a href="#todo">Activités</a>
-            </div>
+         <!--    <div class="navbar__links__nav"> -->
+              <a href="#places" class="black-link places">Hébergements</a>
+              <!-- <a href="#todo">Activités</a> -->
+            <!-- </div> -->
           </div>
           <div class="navbar__signin">
-            <a href="#">S'inscrire</a>
+            <a href="#todo" class="black-link todo">Activités</a>
+            <a href="#" class="blue-link">S'inscrire</a>
           </div>
         </nav>
       <!-- header -->
       <header>
-        <div class="search col-xs-12">
+        <div class="search">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
-          <div class="input-group mb-3">
-            <span class="input-group-text p-3" id="search-form"><i class="fas fa-map-marker-alt"></i></span>
-            <input type="text" class="form-control" aria-label="Username"
-                   aria-describedby="search-form" value="Marseille, France">
-            <span class="input-group-text blue" id="search-form">Rechercher</span>
-          </div>
+          <form action="#" method="post" class="form">
+            <span class="form-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <input type="text" name="recherche" id="search-form" value="Marseille, France">
+            <input type="submit" class="form-button" value="Rechercher">
+          </form>
         </div>
-        <div class="filter col-xs-12">
+        <div class="filter">
+          <h3>Filtres</h3>
           <div class="filter__buttons">
-            <h3>Filtres</h3>
+         <!--    <h3>Filtres</h3> -->
             <a href="#" class="filter__buttons__btn">
               <i class="fas fa-money-bill-wave icon"></i>
               <p>Économique</p>
@@ -62,16 +59,20 @@
               <p>Animaux autorisés</p>
             </a>
           </div>
-          <div class="filter__text">
+          <!-- <div class="filter__text">
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div> -->
+        </div>
+        <div class="filter__text">
             <i class="fas fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
-        </div>
       </header>
       <!-- div resultats -->
-      <div class="resultats">
+      <section class="resultats">
         <!-- section results -->
-        <section class="results col-xs-12 col-sm-6 col-md-9">
+        <section class="results">
           <h2 id="places">Hébergements à Marseille</h2>
           <div class="hotel-cards">
             <a href="#" class="hotel-card">
@@ -178,11 +179,11 @@
                 </div>
               </div>
             </a>
-            <a href="" class="results-afficher">Afficher plus</a>
           </div>
+          <a href="" class="results-afficher">Afficher plus</a>
         </section>
         <!-- aside populaires -->
-        <aside class="popular col-xs-12 col-sm-6 col-md-3">
+        <aside class="popular">
           <div class="popular-cards">
             <div class="popular-cards__title">
               <h2>Les plus populaires</h2>
@@ -242,9 +243,9 @@
             </a>
           </div>
         </aside>
-      </div>
+      </section>
       <!-- article activites -->
-      <article class="activities col-xs-12">
+      <article class="activities">
         <h2 id="todo">Activités à Marseille</h2>
         <div class="activity-cards">
           <div class="activity-cards__column one-card">
