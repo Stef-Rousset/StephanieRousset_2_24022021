@@ -53,31 +53,6 @@ img {
 .navbar__signin {
   width: 15%;
 }
-/*.navbar__links__nav {*/
-/*  display: flex;*/
-/*  justify-content: space-between;*/
-/*  width: 20%;*/
-/*}*/
-/*.navbar__links__nav a {
-  padding-top: 1rem;
-  font-size: 1.2rem;
-}*/
-/*.navbar__links__nav a:hover {
-  color: #0065FC;
-  text-decoration: none;
-  border-top: 2px solid #0065FC;
-  opacity: 1;
-}*/
-/*.navbar__signin a {
-  color: #0065FC;
-  font-size: 1.2rem;
-  padding-top: 1rem;
-}
-.navbar__signin a:hover {
-  border-top: 2px solid black;
-  color: black;
-  opacity: 1;
-}*/
 .black-link {
   font-size: 1.2rem;
   padding-top: 1rem;
@@ -154,9 +129,6 @@ form {
 .filter__buttons a:hover {
   opacity: 0.7;
 }
-/*.filter__buttons h3 {
-  margin-right: 1.3rem;
-}*/
 .filter__buttons__btn {
   display: flex;
   align-items: center;
