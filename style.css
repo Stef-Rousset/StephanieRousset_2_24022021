@@ -57,7 +57,6 @@ img {
 .black-link {
   font-size: 1.2rem;
   padding-top: 1rem;
-
 }
 .black-link:hover {
   color: #0065FC;
@@ -170,26 +169,25 @@ button {
 }
 .filter__text p {
   margin: 0;
-  font-size: 1.1rem;
 }
 
 /* resultats */
 .resultats {
   display: flex;
   justify-content: space-between;
+  height: auto;
 }
 /* section results */
 .results {
   background-color: #F2F2F2;
   width: 62%;
-  height: 80vh;
+  height: auto;
   border-radius: 1rem;
 }
 .hotel-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2.5rem;
-  grid-template-rows: 1fr 1fr;
   margin: 1.6rem;
 }
 .hotel-card {
@@ -231,12 +229,13 @@ button {
   font-size: 1.1rem;
   font-weight: bold;
   margin-left: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 /* aside popular */
 .popular {
   background-color: #F2F2F2;
   width: 35%;
-  height: 80vh;
+  height: auto;
   border-radius: 1rem;
 }
 .popular-cards {
@@ -249,8 +248,8 @@ button {
   align-items: center
 }
 .popular-cards__title h2 {
-  padding-left: 0rem;
-  margin-bottom: 0rem;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 .fa-chart-line {
   font-size: 1.5rem;
@@ -261,18 +260,18 @@ button {
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  margin: 1.6rem 0rem;
+  margin: 1.6rem 0;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .popular-card__image {
   width: 35%;
-  height: 150px;
+  height: auto;
   margin: 0.5rem;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
-  border-top-right-radius: 0rem;
+  border-top-right-radius: 0;
 }
 .popular-card__text {
   margin: 0.8rem;
@@ -284,7 +283,7 @@ button {
   padding-bottom: 0.5rem;
 }
 .popular-card__text h3 {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 .popular-rate {
   display: flex;
@@ -298,8 +297,8 @@ button {
   margin-top: 4rem;
 }
 .activities h2 {
-  padding-left: 0rem;
-  padding-top: 0rem;
+  padding-left: 0;
+  padding-top: 0;
 }
 .activity-cards {
   display: flex;
@@ -338,7 +337,7 @@ button {
 }
 .activity-card__image {
   width: 100%;
-  height: 73%;
+  height: 80%;
 }
 .big-img {
   height: 90%;
@@ -349,7 +348,7 @@ button {
 .activity-card__title {
   font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: 0;
   padding: 0.3rem 1rem;
 }
 /* footer */
@@ -385,9 +384,6 @@ footer {
 @media (max-width: 767px) {
   * {
     box-sizing: border-box;
-  }
-  body {
-    margin: 0;
   }
   .main-container {
   width: 100vw;
@@ -429,7 +425,7 @@ footer {
     align-items: flex-end;
   }
   #logo {
-    padding-top: 0px;
+    padding-top: 0;
   }
   .black-link:hover {
     border-bottom: 2px solid #0065FC;
@@ -505,7 +501,6 @@ footer {
   }
   .popular, .resultats, .results {
     width: 100%;
-    height: auto;
     border-radius: 0;
   }
   .popular-cards {
@@ -533,11 +528,11 @@ footer {
   }
   .hotel-cards {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
     margin: 1rem;
   }
   .hotel-card__image {
+    width: 97%;
     height: 125px;
   }
   .hotel-card__text p {
@@ -594,16 +589,16 @@ footer {
   }
 }
 
-/*Medium devices (tablets, 768px and up)*/
+/*Medium devices (tablets portrait, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
   * {
     box-sizing: border-box;
   }
   .navbar__links {
-    width: 65%;
+    width: 70%;
   }
   .navbar__signin {
-    width: 30%;
+    width: 25%;
   }
   form {
     width: 65%;
@@ -619,7 +614,6 @@ footer {
     width: 100%;
   }
   .popular {
-    height: auto;
     margin-bottom: 3rem;
   }
   .popular-cards {
@@ -636,9 +630,9 @@ footer {
   }
   .popular-card__text {
     padding-top: 0;
+    margin: 0.6rem;
   }
   .results {
-    height: auto;
     background-color: white;
   }
   .results h2 {
@@ -674,7 +668,7 @@ footer {
     height: 70%;
   }
 }
-/*Large devices (desktops, 992px and up)*/
+/*Large devices (tablets landscape, desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
   * {
     box-sizing: border-box;
@@ -688,19 +682,12 @@ footer {
   form {
     width: 60%;
   }
-  .results {
-    height: auto;
-  }
   .hotel-cards {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1.5rem;
   }
   .results-afficher {
     margin-bottom: 1.6rem;
-  }
-  .popular {
-    height: auto;
   }
   .popular-cards {
     width: 88%;
@@ -727,14 +714,20 @@ footer {
     border-top-right-radius: 1rem;
     margin-bottom: 0;
   }
-  .big-img {
+  .activity-card__image {
+    height: 73%;
+  }
+  .activity-card__image.big-img {
     height: 86%;
   }
-  .little-img {
+  .activity-card__image.little-img {
     height: 65%;
   }
   .activity-card__title {
     font-size: 1rem;
     padding: 0.3rem 1rem;
+  }
+  .activity-card__image {
+    height: 73%;
   }
 }
