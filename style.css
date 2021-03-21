@@ -33,6 +33,9 @@ img {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+.bold {
+  font-weight: bold;
+}
 /* navbar */
 .navbar {
   display: flex;
