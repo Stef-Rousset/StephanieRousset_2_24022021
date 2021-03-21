@@ -43,12 +43,12 @@ img {
 .navbar a {
   font-size: 1.2rem;
 }
-.navbar__links, .navbar__signin {
+.navbar__logo, .navbar__signin {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar__links {
+.navbar__logo {
   width: 80%;
 }
 .navbar__signin {
@@ -154,7 +154,7 @@ button {
   padding: 0 1rem;
   font-size: 1rem;
 }
-.filter__text {
+.infos {
   display: flex;
   align-items: center;
   margin: 2.5rem 0;
@@ -167,7 +167,7 @@ button {
   margin-right: 1rem;
   font-size: 1rem;
 }
-.filter__text p {
+.infos p {
   margin: 0;
 }
 
@@ -258,7 +258,7 @@ button {
 .popular-card {
   display:flex ;
   justify-content: flex-start;
-  width: 100%;
+  /*width: 100%;*/
   height: auto;
   margin: 1.6rem 0;
   background-color: white;
@@ -357,7 +357,7 @@ footer {
   margin-top: 4rem;
   width: 100vw;
 }
-.footer__columns {
+.footer-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
@@ -365,16 +365,16 @@ footer {
   margin: 0 auto;
   padding: 2rem 0;
 }
-.footer__column a {
+.footer-columns__column a {
   display: block;
   padding-bottom: 0.3rem;
   font-size: 1.05rem;
   opacity: 0.8;
 }
-.footer__column h3 {
+.footer-columns__column h3 {
   margin-bottom: 2rem;
 }
-.footer__column a:hover {
+.footer-columns__column a:hover {
   color: #0065FC;
 }
 
@@ -411,13 +411,13 @@ footer {
   .navbar a {
     font-size: 1rem;
   }
-  .navbar__links,  .navbar__signin {
+  .navbar__logo,  .navbar__signin {
     width: 50%;
    }
-  .navbar__links {
+  .navbar__logo {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
   }
   .navbar__signin {
     display: flex;
@@ -492,7 +492,7 @@ footer {
   .filter__buttons__btn p {
     font-size: 0.85rem;
   }
-  .filter__text p {
+  .infos p {
     font-size: 0.8rem;
   }
   .resultats {
@@ -576,14 +576,14 @@ footer {
   footer {
     margin-top: 2rem;
   }
-  .footer__columns {
+  .footer-columns {
     grid-template-columns: 1fr;
     margin: 0 1rem;
   }
-  .footer__column {
+  .footer-columns__column {
     margin-bottom: 1rem;
   }
-  .footer__columns h3 {
+  .footer-columns__column h3 {
     font-size: 1.2rem;
     margin-bottom: 1.3rem;
   }
@@ -594,7 +594,7 @@ footer {
   * {
     box-sizing: border-box;
   }
-  .navbar__links {
+  .navbar__logo {
     width: 70%;
   }
   .navbar__signin {
@@ -673,7 +673,7 @@ footer {
   * {
     box-sizing: border-box;
   }
-  .navbar__links {
+  .navbar__logo {
     width: 73%;
   }
   .navbar__signin {
