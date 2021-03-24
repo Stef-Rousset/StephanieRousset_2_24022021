@@ -311,16 +311,15 @@ button {
   width: 100%;
   margin: 2rem auto;
 }
-.activity-cards__column {
+.activity-column {
   width: 23%;
   height: 100%;
 }
-.activity-cards__column a {
+.one-card, .activity-column a {
   border-radius: 1rem;
 }
-.one-card {
+.one-card, .activity-card-medium, .activity-card-little {
   box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
-  border-radius: 1rem;
 }
 .two-cards {
   display: flex;
@@ -332,11 +331,9 @@ button {
 }
 .activity-card-medium {
   height: 50%;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .activity-card-little {
   height: 40%;
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 .activity-card__image {
   width: 100%;
@@ -360,7 +357,7 @@ footer {
   margin-top: 4rem;
   width: 100vw;
 }
-.footer-columns {
+.footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
@@ -368,16 +365,16 @@ footer {
   margin: 0 auto;
   padding: 2rem 0;
 }
-.footer-columns__column a {
+.footer-grid__column a {
   display: block;
   padding-bottom: 0.3rem;
   font-size: 1.05rem;
   opacity: 0.8;
 }
-.footer-columns__column h3 {
+.footer-grid__column h3 {
   margin-bottom: 2rem;
 }
-.footer-columns__column a:hover {
+.footer-grid__column a:hover {
   color: #0065FC;
 }
 
@@ -555,7 +552,7 @@ footer {
   .activity-cards h3 {
     font-size: 1rem;
   }
-  .activity-cards__column {
+  .activity-column {
     width: 85%;
   }
   .one-card {
@@ -579,14 +576,14 @@ footer {
   footer {
     margin-top: 2rem;
   }
-  .footer-columns {
+  .footer-grid {
     grid-template-columns: 1fr;
     margin: 0 1rem;
   }
-  .footer-columns__column {
+  .footer-grid__column {
     margin-bottom: 1rem;
   }
-  .footer-columns__column h3 {
+  .footer-grid__column h3 {
     font-size: 1.2rem;
     margin-bottom: 1.3rem;
   }
@@ -656,16 +653,16 @@ footer {
     align-items: flex-start;
     flex-wrap: wrap;
   }
-  .activity-cards__column {
+  .activity-column {
     width: 45%;
     height: 50%;
     margin-bottom: 2rem;
   }
-  .big-img {
-    height: 85%;
-  }
   .activity-card__image {
     height: 75%;
+  }
+  .big-img {
+    height: 85%;
   }
   .little-img {
     height: 70%;
@@ -720,17 +717,14 @@ footer {
   .activity-card__image {
     height: 73%;
   }
-  .activity-card__image.big-img {
+  .big-img {
     height: 86%;
   }
-  .activity-card__image.little-img {
+  .little-img {
     height: 65%;
   }
   .activity-card__title {
     font-size: 1rem;
     padding: 0.3rem 1rem;
-  }
-  .activity-card__image {
-    height: 73%;
   }
 }
